@@ -31,11 +31,13 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import inkSync from "./ink.png";
-import tracker from "./tracker.png";
-import socialSphere from "./socialSphere.png";
+import News from "./news.png";
+import Internship from "./intern.png";
+import Shoe from "./shoe.png";
+import GymLiftIt from "./gym.png";
+import TravelWebApp from "./travelweb.png";
+import TravellMob from "./travelmob.jpg"
+import FlexVogue from "./fvshopify.png"
 
 export {
   logo,
@@ -63,11 +65,13 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  inkSync,
-  tracker,
-  socialSphere,
+  News,
+  Internship,
+  Shoe,
+  GymLiftIt,
+  TravelWebApp,
+  FlexVogue,
+  TravellMob,
   nextjs,
   express,
   java,

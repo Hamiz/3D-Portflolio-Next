@@ -2,18 +2,15 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { SectionWrapper } from "./hoc";
 import { projects } from "../constants/constants";
-import { fadeIn, textVariant } from "../utils/motion";
 import { HiLink } from "react-icons/hi";
 import { ImGithub } from "react-icons/im";
 import Image from "next/image";
 import color_sharp from "../assets/color_sharp.png";
 
 const ProjectCard = ({
-  index,
   name,
   description,
   tags,
@@ -134,11 +131,7 @@ const Works = () => {
           <motion.p
             className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
           >
-            Following projects showcases my skills and experience through
-            real-world examples of my work. Each project is briefly described with
-            links to code repositories and live demos in it. It reflects my
-            ability to solve complex problems, work with different technologies,
-            and manage projects effectively.
+            These projects highlight my expertise and experience through practical implementations. Each project includes a brief description, along with links to the code repository and live demo. They demonstrate my ability to tackle challenges, work with diverse technologies, and deliver effective solutions.
           </motion.p>
           <Image src={color_sharp} alt="color-sharp" className="absolute z-[-1] h-80 -left-60 w-screen -top-20" />
         </div>

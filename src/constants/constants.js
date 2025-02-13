@@ -7,24 +7,21 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
-  docker,
-  carrent,
-  jobit,
-  inkSync,
-  tracker,
+  News,
+  TravellMob,
+  Internship,
+  Shoe,
+  GymLiftIt,
   threejs,
   nextjs,
   express,
-  java,
-  jwt,
-  nextauth,
-  socialSphere,
+  TravelWebApp,
+  FlexVogue
 } from "../assets";
 
 export const navLinks = [
@@ -52,13 +49,9 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Programmer",
+    title: "UI/UX Designer",
     icon: backend,
   },
-  // {
-  //   title: "Creator",
-  //   icon: creator,
-  // },
 ];
 
 const technologies = [
@@ -85,10 +78,6 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -100,10 +89,10 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  // {
-  //   name: "Three JS",
-  //   icon: threejs,
-  // },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
   {
     name: "git",
     icon: git,
@@ -117,48 +106,25 @@ const technologies = [
     icon: css,
   },
   {
-    name: "Java",
-    icon: java,
+    name: "figma",
+    icon: figma,
   },
-  {
-    name: "JWT",
-    icon: jwt,
-  },
-  // {
-  //   name: "NextAuth",
-  //   icon: nextauth,
-  // },
-  // {
-  //   name: "figma",
-  //   icon: figma,
-  // },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
 ];
 
 const projects = [
   {
-    name: "InkSync",
+    name: "3D Shoe Ecommerce",
     description:
-      "A real-time collaborative whiteboard web application built with NextJs, Express, and Socket.io.",
+      "A real-time collaborative web application built with Next.js and Node.js, featuring interactive 3D models of shoes.",
     features: [
-      "Users can create a room and invite others to join the room using a unique room code.",
-      "Users can draw on the whiteboard and the changes will be reflected in real-time to all the users in the room.",
+      "Users can create a room and invite others to join using a unique room code.",
+      "Users can draw on the whiteboard, and changes will be reflected in real-time to all participants.",
+      "Users can view and interact with 3D models of shoes for a more realistic shopping experience."
     ],
     tags: [
       {
         name: "NextJs",
         color: "blue-text-gradient",
-      },
-      {
-        name: "ExpressJs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Socket.io",
-        color: "pink-text-gradient",
       },
       {
         name: "Tailwind",
@@ -169,28 +135,28 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: inkSync,
-    source_code_link: "https://github.com/himanshu8443/InkSync",
-    live_link: "https://www.inksync.cloud/",
+    image: Shoe,
+    source_code_link: "https://github.com/Hamiz/3D-Shoes-Ecommerce-Landing-Page",
+    live_link: "/https://github.com/Hamiz/3D-Shoes-Ecommerce-Landing-Page",
   },
   {
-    name: "Hayasaka",
+    name: "News Website",
     description:
-      "A dynamic full-stack music streaming web application with Next.js 13 and MongoDB.",
+      "A modern news web app built with Next.js and Tailwind CSS, featuring dynamic categories, interactive UI, and smooth animations. Stay updated with the latest global headlines, tech trends, politics, and sports news—all in a sleek and responsive design. ",
     features: [
-      "User authentication using NextAuth.js with JWT and OAuth providers.",
-      "Redux to Manage app state effectively.",
-      "Play, pause, skip, and control the playback of songs.",
-      "Users can Create, update and delete their own playlists.",
-      "Add songs to favorites in one click.",
-      "Auto adds similar songs to the queue.",
-      "Swipe and touch gestures for touch-responsive devices.",
-      "Display song details such as title, artist, album, and album artwork.",
-      "PWA (Progressive Web App) support. ",
+      "Dynamic news categories such as World, Tech, Politics, Sports, and more.",
+      "Real-time news updates fetched from an API (e.g., NewsAPI, NY Times API).",
+      "Search functionality to find news articles by keyword or topic.",
+      "Bookmark articles for later reading.",
+      "Dark mode and customizable UI settings.",
+      "Smooth animations for a modern and interactive experience.",
+      "Responsive design optimized for desktop, tablet, and mobile devices.",
+      "Lazy loading for improved performance and faster loading times.",
+      "PWA (Progressive Web App) support for offline reading.",
     ],
     tags: [
       {
-        name: "react",
+        name: "ReactJs",
         color: "blue-text-gradient",
       },
       {
@@ -198,44 +164,35 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+      name: "ExpressJs",
+      color: "red-text-gradient",
+      },
+      {
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
       {
-        name: "nextjs",
+        name: "NextJs",
         color: "orange-text-gradient",
       },
-      {
-        name: "nextauth",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "redux",
-        color: "green-text-gradient",
-      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/himanshu8443/hayasaka",
-    live_link: "https://hayasaka.live/",
+    image: News,
+    source_code_link: "https://github.com/Hamiz/NewshubWeb",
+    live_link: "https://newshuborg.netlify.app/",
   },
   {
-    name: "Study Notion",
-    description: "Developed an educational technology website with CMS.",
+    name: "Internship Platform",
+    description: "The Internship Platform is a web-based educational technology system designed to connect students with internship opportunities while allowing instructors and organizations to manage and post internships.",
     features: [
-      "Implemented Email verification and using OTP user authentication and login/signup functionality using JWT for secure access to the platform.",
-      "Students can browse and purchase courses. Instructors can create new courses, edit existing courses, and delete courses they have created.",
-      "Integrated MongoDB database to store user information, course data, and progress tracking.",
-      "Employed RESTful API principles for seamless communication between the frontend and backend systems.",
-      "Razorpay payment integration.",
-      "PWA (Progressive Web App) support.",
+      "Internship Management: Students can browse and apply for internships, while companies and mentors can post, edit, and remove listings.",
     ],
     tags: [
       {
-        name: "react",
+        name: "React Vite",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Restapi",
         color: "green-text-gradient",
       },
       {
@@ -243,175 +200,179 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "MongoDB",
         color: "orange-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "Nodejs",
         color: "green-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/himanshu8443/Study-Notion-master",
-    live_link: "https://studynotion-master.vercel.app/",
+    image: Internship,
+    source_code_link: "https://github.com/Hamiz/Internship-Web-App",
+    live_link: "https://intershippakistan.netlify.app/",
   },
   {
-    name: "FlipKart Price Tracker",
-    description:
-      "Chrome extension to track FlipKart product prices and send an alert to users when prices go below the user-selected price.",
+    name: "Journey Mobile App",
+    description: "Journey Mobile App is a cross-platform travel booking app built with React Native, Node.js, and Express.js, using MySQL for secure data management. It enables users to browse destinations, book trips, and manage itineraries with a seamless experience powered by a RESTful API and a responsive Bootstrap CSS design.",
     features: [
-      "Users can add products to the watchlist by clicking on the extension icon on the product page.",
-      "Users can set a price alert by entering the desired price for the product.",
+      "Cross-platform support (iOS & Android) with React Native",
+"Secure authentication using Express.js & Node.js",
+"RESTful API for smooth backend communication",
+"Travel planning & booking system",
+"Real-time updates on trips and destinations",
+"MySQL database management with XAMPP",
+"Responsive UI with Bootstrap CSS",
     ],
     tags: [
       {
-        name: "JavaScript",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
-        name: "Chrome Extension",
+        name: "Restapi",
         color: "green-text-gradient",
       },
+      {
+        name: "ExpressJs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MySql",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Xamp",
+        color: "white-text-gradient",
+      },
+      {
+        name: "Bootsrap CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Nodejs",
+        color: "green-text-gradient",
+      },
+    ],
+    image: TravellMob,
+    source_code_link: "https://github.com/Hamiz/JourneyApp",
+    live_link: "https://github.com/Hamiz/JourneyApp",
+  },
+  {
+    name: "LiftIt Web App",
+    description:
+      "The LiftIt Web App is a full-stack eCommerce platform using React (TypeScript), Node.js + Express.js, and PostgreSQL. It enables users to browse and purchase gym accessories, clothing, and machines for men and women. Featuring Auth.js for secure authentication, a RESTful API, and real-time order tracking, it ensures a seamless and efficient shopping experience.",
+    features: [
+      "User Authentication: Secure login/signup using Auth.js (OAuth & JWT).",
+"Product Catalog: Browse a variety of gym accessories, clothes, and machines for men and women.",
+"Shopping Cart & Checkout: Add items to cart and complete purchases securely.",
+"Payment Integration: Supports online payments via Razorpay or Stripe.",
+"Order Management: Users can track their orders and view purchase history.",
+"Admin Dashboard: Manage products, orders, and users efficiently.",
+"Wishlist Feature: Save favorite gym products for future purchases.",
+"Search & Filters: Advanced search and filtering options for better shopping experience.",
+"Mobile-Friendly (PWA): Optimized for mobile and desktop users.",
+    ],
+    tags: [
+      {
+        name: "React Vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ExpressJs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PostgreSql",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NodeJs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AuthJs",
+        color: "puple-text-gradient",
+      },
+    ],
+    image: GymLiftIt,
+    source_code_link: "https://github.com/Hamiz/Lift-it",
+    live_link:
+      "https://liftitgym.netlify.app/",
+  },
+  {
+    name: "WanderLust Adventure",
+    description:
+      "WanderLust Adventure is a professionally designed front-end web interface tailored for a client's travel and adventure platform. The design ensures a visually engaging, responsive, and user-friendly experience, allowing visitors to explore various travel destinations, book tours, and access essential travel information seamlessly.",
+    features: [
+      "Modern UI/UX Design: Aesthetic and intuitive interface optimized for user engagement.",
+"Fully Responsive: Ensures seamless performance across all devices and screen sizes.",
+"Interactive Navigation: Smooth and dynamic navigation for an enhanced browsing experience.",
+"Optimized Performance: Fast loading speeds with efficient code and asset management.",
+"SEO-Friendly Structure: Designed to improve search engine visibility and reach.",
+"Cross-Browser Compatibility: Functions seamlessly on all major web browsers.",
+"Integration Ready: Easily adaptable for backend integration and API connectivity.",
+    ],
+    tags: [
       {
         name: "ReactJs",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tracker,
-    source_code_link: "https://github.com/himanshu8443/FlipKart-Price-Tracker",
-    live_link:
-      "https://chromewebstore.google.com/detail/fliptrack-flipkart-price/pekpfcghlbljghaojdlajgpceebobokd?hl=en",
-  },
-  {
-    name: "Social Sphere",
-    description:
-      "A full-stack social media application with user authentication, infinite scroll, and image and video uploads.",
-    features: [
-      "User authentication using JWT and OAuth providers.",
-      "Infinite scroll for posts.",
-      "Image and video uploads.",
-      "Like, comment, and share posts.",
-      "Follow and unfollow users.",
-      "Dark mode support.",
-    ],
-    tags: [
-      {
-        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "NodeJs",
         color: "green-text-gradient",
-      },
-      {
-        name: "Supabase",
-        color: "pink-text-gradient",
       },
       {
         name: "tailwind",
         color: "orange-text-gradient",
       },
       {
-        name: "redux",
+        name: "NodeJs",
         color: "blue-text-gradient",
       },
     ],
-    image: socialSphere,
-    source_code_link: "https://github.com/himanshu8443/SocialSphere",
-    live_link: "https://socialspherex.vercel.app/",
+    image: TravelWebApp,
+    source_code_link: "https://github.com/Hamiz/Travelling-Landing-Page-tlp",
+    live_link: "https://tlp-hamiz.netlify.app/",
+  },
+  {
+    name: "Flex Vogue Shopify",
+    description:
+      "Flex Vogue is a Shopify-based eCommerce platform showcasing expertise in CRM and customer engagement. It features a sleek, responsive storefront with secure payments, product management, order tracking, and personalized shopping experiences, optimizing both sales and customer relationships. ",
+    features: [
+      "Shopify-Powered Storefront with a modern and intuitive UI",
+"CRM Integration for efficient customer interaction and management",
+"Secure Payment Processing using Shopify built-in solutions",
+"Product Catalog Management with easy additions, edits, and promotions",
+"Order & Inventory Tracking for seamless business operations",
+"Mobile-Optimized Design for a responsive shopping experience",
+"SEO-Optimized Store to improve visibility and attract more customers",
+    ],
+    tags: [
+      {
+        name: "Shopify",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: FlexVogue,
+    live_link: "https://nq8n275zsxf3330a-92425650465.shopifypreview.com",
   },
 ];
-
-// const experiences = [
-//   {
-//     title: "React.js Developer",
-//     company_name: "Starbucks",
-//     icon: starbucks,
-//     iconBg: "#383E56",
-//     date: "March 2020 - April 2021",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "React Native Developer",
-//     company_name: "Tesla",
-//     icon: tesla,
-//     iconBg: "#E6DEDD",
-//     date: "Jan 2021 - Feb 2022",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "Web Developer",
-//     company_name: "Shopify",
-//     icon: shopify,
-//     iconBg: "#383E56",
-//     date: "Jan 2022 - Jan 2023",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "Full stack Developer",
-//     company_name: "Meta",
-//     icon: meta,
-//     iconBg: "#E6DEDD",
-//     date: "Jan 2023 - Present",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-// ];
-
-// const testimonials = [
-//   {
-//     testimonial:
-//       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-//     name: "Sara Lee",
-//     designation: "CFO",
-//     company: "Acme Co",
-//     image: "https://randomuser.me/api/portraits/women/4.jpg",
-//   },
-//   {
-//     testimonial:
-//       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-//     name: "Chris Brown",
-//     designation: "COO",
-//     company: "DEF Corp",
-//     image: "https://randomuser.me/api/portraits/men/5.jpg",
-//   },
-//   {
-//     testimonial:
-//       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-//     name: "Lisa Wang",
-//     designation: "CTO",
-//     company: "456 Enterprises",
-//     image: "https://randomuser.me/api/portraits/women/6.jpg",
-//   },
-// ];
 
 export {
   services,
   technologies,
-  //  experiences,
-  //  testimonials,
   projects,
 };

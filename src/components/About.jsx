@@ -49,11 +49,7 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-4 text-secondary text-[18px] max-w-3xl leading-[30px] font-semibold'
         >
-          I'm a skilled software developer with experience in TypeScript and
-          JavaScript, and expertise in frameworks like React, Node.js, and
-          Three.js. I'm a quick learner and collaborate closely with clients to
-          create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!
+          I'm a proficient software developer with expertise in TypeScript and JavaScript, specializing in modern frameworks such as React, Next.js, Vue.js, Node.js, and Three.js. With a strong ability to learn quickly and adapt to new technologies, I collaborate closely with clients to develop scalable, efficient, and user-centric solutions that address real-world challenges. Let's work together to turn your ideas into reality!
         </motion.p>
         <Image src={color_sharp} alt="color-sharp" className="absolute z-[-1] h-80 -left-60 w-screen -top-20" />
         <Image src={astronaut} alt="astronaut" className="absolute z-[-1] h-80 -right-20 animation top-28" />
